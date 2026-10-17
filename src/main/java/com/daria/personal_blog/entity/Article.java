@@ -61,4 +61,13 @@ public class Article {
     public LocalDate getCreationDate() {
         return this.creationDate;
     }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+    
+    public void setCreationDate(LocalDate creationDate) {
+        this.creationDate = creationDate;
+    }
+
 }
