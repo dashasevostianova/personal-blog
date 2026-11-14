@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <h1>Evolutionary programming</h1>
+    <h2>GOAL</h2>
+    <p>
+        To find string such that its length is small, but all symbols are vowels
+    </p>
+
+    <h2>ENVIRONMENT</h2>
+    <p>
+        Strings and some letters, both vowels and consonants. We limit its number to 100.
+    </p>
+    <p>
+        <b>fitness score:</b><br />
+        Fitness score varies from almost zero to to 100 (if string contains only one vowel).
+        The formula for fitness score is: 50*(1/len) + 50*(vowels/len).
+    <h2>
+
+    <h2>MECHANICS</h2>
+    <p>
+        <ul>
+            <li>Index of string to which we will add a new letter is selected rsndomly. Letter added to an end.</li>
+            <li>The first letter is removed from every string.</li>
+            <li>If fitness score is less than maximum one more than in 3 times - death.<br />
+                If fitness score is less than maximum one more than in 1.5 times -  no reproduction.<br />
+                Else - reproduction.
+            </li>
+            <li>While reproducting, new string with crossover + applying mutation.</li>
+        </ul>
+    </p>
+</html>
